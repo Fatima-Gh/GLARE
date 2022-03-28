@@ -28,10 +28,42 @@ You can download the paper via: [[Github]](xx.pdf) [[DOI]](https://doi.org/xx/xx
 
 ## File Specifications
 
-- **app.csv**: Description for the model architecture.
-- **reviews.csv**: Used functions for data preprocessing.
-- …
+- **apps.csv**: File that contains apps metadata.
+- **reviews.csv**: File that contain reviews and reviews metadata.
+- **categories/**: Folder that contains 59 csv files, each file corrospond to one category with apps and apps metadata scrapped from top 200 free apps for that category.
+- **vocabulary.csv**: File that contains vocabulary set generated from reviews with additional engineered features (word length, word frequency, has noise or digits, ..etc.)
 
+
+### Raw Data
+### Apps Metadata
+| title         | appId  | url | icon | developer | developerId | summary | score |
+| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |
+| application name/title   |      application unique identifier        |      application url at Google PlayStore    | url for image object  | developer name | developer unique identifier | short description of the application | application accumlated rating |  
+
+### Reviews Metadata
+
+
+| at         | content  | repliedAt | replyContent | reviewCreatedVersion | reviewId | score | thumbsUpCount | userImage | userName | appID |
+| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |---------------- | -------------- |-------------- |
+| datetime   |     review text        |      developers reply time      | developers reply content | application version during the time of review | unique ID for each review  |     user rating        |      number of users that agree with the reviewer       | url for image object | user display name   |     application unique identifier        |  
+
+
+### Engineered Data
+
+### Apps Metadata
+Same as apps.csv in raw data with the following additions:
+
+| at         | content  | repliedAt | replyContent | reviewCreatedVersion | reviewId | score | thumbsUpCount | userImage | userName | appID |
+| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |---------------- | -------------- |-------------- |
+| datetime   |     review text        |      developers reply time      | developers reply content | application version during the time of review | unique ID for each review  |     user rating        |      number of users that agree with the reviewer       | url of image object | user display name   |     application unique identifier        |  
+
+### Reviews Metadata
+Same as reviews.csv in raw data with the following additions:
+
+
+| at         | content  | repliedAt | replyContent | reviewCreatedVersion | reviewId | score | thumbsUpCount | userImage | userName | appID |
+| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |---------------- | -------------- |-------------- |
+| datetime   |     review text        |      developers reply time      | developers reply content | application version during the time of review | unique ID for each review  |     user rating        |      number of users that agree with the reviewer       | url of image object | user display name   |     application unique identifier        |  
 
 ### Folders Structure
 
