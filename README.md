@@ -12,10 +12,10 @@ You can download the paper via: [[Github]](xx.pdf) [[DOI]](https://doi.org/xx/xx
 
 ## Paper Summary
 
-[Summarize your work in one sentence]
+[abstract]
 
 ## Preparation
-### Below is details about each file, please ensure that you have enough storage before downloading the data.
+#### Below is details about each file, please ensure that you have enough storage before downloading the data.
 
 | Data Type         | File Name  | File Size | File Type |
 | ------------------ |---------------- | -------------- |-------------- |
@@ -103,13 +103,13 @@ If you use this dataset please cite as:
 }
 ```
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
 This work is supported by National Center for Artificial Intelligence - SDAIA.
 
 ## Contact
 
-[Fatima AlGhamdi](fatima.alghamdi@hotmail.com)
+[Fatima AlGhamdi](fatima.alghamdi@hotmail.com) -->
 
 ## License
 
