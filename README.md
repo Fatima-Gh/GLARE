@@ -12,64 +12,115 @@ You can download the paper via: [[Github]](xx.pdf) [[DOI]](https://doi.org/xx/xx
 
 ## Paper Summary
 
-[abstract]
+We introduce GLARE: Google Apps Arabic Reviews dataset. A collection of 76M reviews from 9,980 Android apps collected from Google PlayStore Saudi store.
 
 ## Preparation
 #### Below is details about each file, please ensure that you have enough storage before downloading the data.
 
 | Data Type         | File Name  | File Size | File Type |
 | ------------------ |---------------- | -------------- |-------------- |
-| raw   |     apps        |      3.9 MB       | CSV |
-| raw   |     reviews        |      95%       | CSV |
-| raw   |     categories        |      95%       | CSV
-| engineered   |     apps        |      3.9 MB       | CSV
-| engineered   |     reviews        |      95%       | CSV
+| raw   |     apps        |      4.1 MB       | CSV |
+| raw   |     reviews        |      25.3 GB      | CSV |
+| raw   |     categories/        |      4.3 MB       | CSV
+| engineered   |     apps        |      3.8 MB       | CSV
+| engineered   |     reviews        |      30.2 GB       | CSV
 | engineered   |     vocabulary        |      530.5 MB       | CSV
 
 ## File Specifications
 
 - **apps.csv**: File that contains apps metadata.
-- **reviews.csv**: File that contain reviews and reviews metadata.
-- **categories/**: Folder that contains 59 csv files, each file corrospond to one category with apps and apps metadata scrapped from top 200 free apps for that category.
+- **reviews.csv**: File that contains reviews and reviews metadata.
+- **categories/**: Folder that contains 59 CSV files, each file corrosponds to one category with apps and apps metadata scrapped from top 200 free apps for that category.
 - **vocabulary.csv**: File that contains vocabulary set generated from reviews with additional engineered features (word length, word frequency, has noise or digits, ..etc.)
 
 
 ### Raw Data
-### Apps Metadata
-| title         | appId  | url | icon | developer | developerId | summary | score |
-| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |
-| application name/title   |      application unique identifier        |      application url at Google PlayStore    | url for image object  | developer name | developer unique identifier | short description of the application | application accumlated rating |  
+#### Apps Metadata
 
-### Reviews Metadata
+```
+{
+    "title":"application name/title",
+    "app_id":"application unique identifier",
+    "url":"application url at Google PlayStore",
+    "icon":"url for image object",
+    "developer":"developer name",
+    "developer_id":"developer unique identifier",
+    "summary":"short description of the application",
+    "rating":"application accumulated rating"
+ }
+ ```
+
+#### Reviews Metadata
+
+```
+
+{
+   "at":"review datetime",
+   "content":"review text",
+   "replied_at":"developer reply datetime",
+   "reply_content":"developer reply content",
+   "review_created_version":"user application version during the time of review",
+   "review_id":"review unique identifier",
+   "rating":"user rating",
+   "thumbs_up_count":"number of users that agree with the reviewer",
+   "user_image":"url for image object",
+   "user_name":"user display name",
+   "app_id":"application unique identifier"
+}
 
 
-| at         | content  | repliedAt | replyContent | reviewCreatedVersion | reviewId | score | thumbsUpCount | userImage | userName | appID |
-| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |---------------- | -------------- |-------------- |
-| datetime   |     review text        |      developers reply time      | developers reply content | application version during the time of review | unique ID for each review  |     user rating        |      number of users that agree with the reviewer       | url for image object | user display name   |     application unique identifier        |  
-
-
+```
 ### Engineered Data
 
-### Apps Metadata
+#### Apps Metadata
 Same as apps.csv in raw data with the following additions:
 
-| at         | content  | repliedAt | replyContent | reviewCreatedVersion | reviewId | score | thumbsUpCount | userImage | userName | appID |
-| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |---------------- | -------------- |-------------- |
-| datetime   |     review text        |      developers reply time      | developers reply content | application version during the time of review | unique ID for each review  |     user rating        |      number of users that agree with the reviewer       | url of image object | user display name   |     application unique identifier        |  
+```
+{
+   "reviews_count":"number of reviews for the application",
+   "categories":"list of application categories",
+   "categories_count":"number of application categories"
 
-### Reviews Metadata
+}
+```
+
+#### Reviews Metadata
 Same as reviews.csv in raw data with the following additions:
 
+```
 
-| at         | content  | repliedAt | replyContent | reviewCreatedVersion | reviewId | score | thumbsUpCount | userImage | userName | appID |
-| ------------------ |---------------- | -------------- |-------------- | ------------------ |---------------- | -------------- |-------------- |---------------- | -------------- |-------------- |
-| datetime   |     review text        |      developers reply time      | developers reply content | application version during the time of review | unique ID for each review  |     user rating        |      number of users that agree with the reviewer       | url of image object | user display name   |     application unique identifier        |  
+{
+  "tokenized_review":"list of review words tokenized on white-space",
+  "words_count":"number of words in review"
+}
+
+
+``` 
+
+
+#### Vocabulary 
+
+```
+
+{
+   "word":"term text",
+   "length":"word characters count",
+   "frequency":"word occurrences in the reviews dataset",
+   "has_noise":"true or false if word contains anything non-arabic alphanumeric",
+   "noise":"list of noise (anything non-arabic alphanumeric) in the word",
+   "has_digits":"true or false if word contains arabic or hindi digits",
+   "digits":"list of digits in the word"
+}
+
+
+``` 
+
 
 ### Folders Structure
 
 - Data are prepared as raw data or engineered data.
-- Download the dataset files [Google Drive](https://example.com) | [Zenodo](https://example.com) | [Google Drive](https://example.com).
-- The directory structure is as follows:
+- Download the dataset files: [Google Drive](https://github.com/Fatima-Gh/GLARE/) | [Zenodo](https://github.com/Fatima-Gh/GLARE/)
+- The directory structure is as follow:
 ```
 data
 └── raw
@@ -81,7 +132,7 @@ data
    ├── reviews.csv
    └── vocabulary.csv
 ```
-
+<!-- 
 ## Usage
 
 ### Starter Code:
@@ -89,7 +140,7 @@ data
 ```bash
 python main.py --arg1 arg1 --arg2 arg2
 ```
-
+ -->
 ## Citation
 
 If you use this dataset please cite as:
