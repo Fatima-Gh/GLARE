@@ -63,7 +63,6 @@ We introduce GLARE: Google Apps Arabic Reviews dataset. A collection of 76M revi
    "review_id":"review unique identifier",
    "rating":"user rating",
    "thumbs_up_count":"number of users that agree with the reviewer",
-   "user_image":"url for image object",
    "user_name":"user display name",
    "app_id":"application unique identifier"
 }
