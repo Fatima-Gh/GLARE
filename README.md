@@ -8,7 +8,7 @@
 Dataset and Code of "GLARE: Google Apps Arabic Reviews" paper submitted to International Conference on Language Resources and Evaluation (LREC) 2022 to The 5th Workshop on Open-Source Arabic Corpora and Processing Tools (OSACT).
 
 
-You can download the paper via: [[Github]](xx.pdf) [[DOI]](https://doi.org/xx/xx) [[ArXiv]](https://arxiv.org/abs/xxxx.xxxxx) [[PapersWithCode]](https://paperswithcode.com/).
+You can download the paper via: [[Github]](GLARE.pdf) [[DOI]](https://doi.org/xx/xx) [[ArXiv]](https://arxiv.org/abs/xxxx.xxxxx).
 
 ## Paper Summary
 
@@ -20,10 +20,10 @@ We introduce GLARE: Google Apps Arabic Reviews dataset. A collection of 76M revi
 | Data Type         | File Name  | File Size | File Type |
 | ------------------ |---------------- | -------------- |-------------- |
 | raw   |     apps        |      4.1 MB       | CSV |
-| raw   |     reviews        |      25.3 GB      | CSV |
+| raw   |     reviews        |      17 GB      | CSV |
 | raw   |     categories/        |      4.3 MB       | CSV
 | engineered   |     apps        |      3.8 MB       | CSV
-| engineered   |     reviews        |      30.2 GB       | CSV
+| engineered   |     reviews        |      21.9 GB       | CSV
 | engineered   |     vocabulary        |      530.5 MB       | CSV
 
 ## File Specifications
