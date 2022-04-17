@@ -118,7 +118,7 @@ Same as reviews.csv in raw data with the following additions:
 ### Folders Structure
 
 - Data are prepared as raw data or engineered data.
-- Download the dataset files: [Google Drive](https://github.com/Fatima-Gh/GLARE/) | [Zenodo](https://github.com/Fatima-Gh/GLARE/)
+- Download the dataset files: [Google Drive](https://drive.google.com/drive/folders/1Cb61K3wFdVlIQfKouchsUpn5oXdJbhyg?usp=sharing) | [Zenodo](https://github.com/Fatima-Gh/GLARE/) | [Alternative Google Drive](https://drive.google.com/drive/folders/1jWCCyJPKFf6Q-1zDuGRUBi6XtlmkyHlt?usp=sharing)
 - The directory structure is as follow:
 ```
 data
