@@ -1,4 +1,5 @@
 [![CC BY 4.0][cc-by-shield]][cc-by]
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6457824.svg)](https://doi.org/10.5281/zenodo.6457824)
 
 
 # GLARE: Google Apps Arabic Reviews
@@ -8,7 +9,8 @@
 Dataset and Code of "GLARE: Google Apps Arabic Reviews" paper submitted to International Conference on Language Resources and Evaluation (LREC) 2022 to The 5th Workshop on Open-Source Arabic Corpora and Processing Tools (OSACT).
 
 
-You can download the paper via: [[Github]](GLARE.pdf) [[DOI]](https://doi.org/xx/xx) [[ArXiv]](https://arxiv.org/abs/xxxx.xxxxx).
+You can download the paper via: [[Github]](GLARE.pdf)
+[[ArXiv]](https://arxiv.org/abs/xxxx.xxxxx).
 
 ## Paper Summary
 
@@ -118,7 +120,7 @@ Same as reviews.csv in raw data with the following additions:
 ### Folders Structure
 
 - Data are prepared as raw data or engineered data.
-- Download the dataset files: [Google Drive](https://drive.google.com/drive/folders/1Cb61K3wFdVlIQfKouchsUpn5oXdJbhyg?usp=sharing) | [Zenodo](https://github.com/Fatima-Gh/GLARE/) | [Alternative Google Drive](https://drive.google.com/drive/folders/1jWCCyJPKFf6Q-1zDuGRUBi6XtlmkyHlt?usp=sharing)
+- Download the dataset files: [Google Drive](https://drive.google.com/drive/folders/1Cb61K3wFdVlIQfKouchsUpn5oXdJbhyg?usp=sharing) | [Zenodo](https://zenodo.org/record/6457824#.Ylv-gX9Bz8w) | [Alternative Google Drive](https://drive.google.com/drive/folders/1jWCCyJPKFf6Q-1zDuGRUBi6XtlmkyHlt?usp=sharing)
 - The directory structure is as follow:
 ```
 data
