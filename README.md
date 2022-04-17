@@ -10,7 +10,7 @@ Dataset and Code of "GLARE: Google Apps Arabic Reviews" paper submitted to Inter
 
 
 You can download the paper via: [[Github]](GLARE.pdf)
-[[ArXiv]](https://arxiv.org/abs/xxxx.xxxxx).
+
 
 ## Paper Summary
 
