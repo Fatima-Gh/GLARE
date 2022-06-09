@@ -147,6 +147,29 @@ python main.py --arg1 arg1 --arg2 arg2
 If you use this dataset please cite as:
 
 ```bibtex
+@dataset{alghamdi_fatima_2022_6457824,
+  author       = {AlGhamdi, Fatima and
+                  Mohammed, Reem and
+                  Al-Khalifa, Hend and
+                  Alowisheq, Areeb},
+  title        = {GLARE: Google Apps Arabic Reviews Dataset},
+  month        = apr,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {1.0},
+  doi          = {10.5281/zenodo.6457824},
+  url          = {https://doi.org/10.5281/zenodo.6457824}
+}
+
+```
+
+<!--
+```
+AlGhamdi, Fatima, Mohammed, Reem, Al-Khalifa, Hend, & Alowisheq, Areeb. (2022). GLARE: Google Apps Arabic Reviews Dataset (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6457824
+```
+
+
+```bibtex
 @inproceedings{[author_first_name][year][abbr],
   title={[paper title]},
   author={[authors]},
@@ -154,7 +177,7 @@ If you use this dataset please cite as:
   year={[year]}
 }
 ```
-
+-->
 <!-- ## Acknowledgments
 
 This work is supported by National Center for Artificial Intelligence - SDAIA.
