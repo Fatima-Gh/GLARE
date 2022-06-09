@@ -6,7 +6,7 @@
 
 
 
-Dataset and Code of "GLARE: Google Apps Arabic Reviews" paper submitted to International Conference on Language Resources and Evaluation (LREC) 2022 to The 5th Workshop on Open-Source Arabic Corpora and Processing Tools (OSACT).
+Dataset and Code of "GLARE: Google Apps Arabic Reviews" paper.
 
 
 You can download the paper via: [[Github]](GLARE.pdf)
